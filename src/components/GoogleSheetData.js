@@ -6,9 +6,9 @@ const GoogleSheetData = () => {
   const [sheetData, setSheetData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const sheetId = '1YNiZ0fxCQGYP3kst95KXoO8kG3xPXY7n3h_JjDWtaHY';
-  const apiKey = 'AIzaSyDGKDnL1PuYxXIeYVbmHQJllQNTxjXThTA';
-  const range = 'A2:G14';
+  const sheetId = 'YOUR_SHEET_ID';
+  const apiKey = 'YOUR_API_KEY';
+  const range = 'INPUT_RANGE';
   const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
 
   useEffect(() => {
